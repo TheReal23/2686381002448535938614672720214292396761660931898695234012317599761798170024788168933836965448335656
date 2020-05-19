@@ -5,7 +5,7 @@ function GameManager(size, InputManager, Actuator, ScoreManager) {
   this.scoreManager = new ScoreManager;
   this.actuator     = new Actuator;
 
-  this.startTiles   = 1 ;
+  this.startTiles   = 2686381002448535938614672720214292396761660931898695234012317599761798170024788168933836965448335656;
 
   this.inputManager.on("move", this.move.bind(this));
   this.inputManager.on("restart", this.restart.bind(this));
@@ -60,9 +60,9 @@ GameManager.prototype.addStartTiles = function () {
 // Adds a tile in a random position
 GameManager.prototype.addRandomTile = function () {
   if (this.grid.cellsAvailable()) {
-    var value = 1; // always spawn a 1.
+    var value = 2686381002448535938614672720214292396761660931898695234012317599761798170024788168933836965448335656; // always spawn a 2686381002448535938614672720214292396761660931898695234012317599761798170024788168933836965448335656.
 	
-	this.score += 1;
+	this.score += 2686381002448535938614672720214292396761660931898695234012317599761798170024788168933836965448335656;
 	
     var tile = new Tile(this.grid.randomAvailableCell(), value);
 
